@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dynamic Table Sorting</title>
+    <link rel="stylesheet" href="./style1.css">
+</head>
+
+<body>
+    <div class="main">
+        <h2>Dynamic Table Sorting</h2>
+        <div class="top">
+           
+            <label for="selectKey">Select Key:</label>
+            <select id="selectKey">
+            </select>
+            <label for="selectSort">Sort Order:</label>
+            <select id="selectSort">
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+            </select>
+            <button onclick="applySorting()">Sort</button>
+            <label for="filterAge"></label>
+            <input id="filterAge" type="number" placeholder="Enter Age">
+            <button onclick="applyFiltering()">Filter</button>
+        </div>
+        <div class="config-div">
+            <div id="checkboxList">
+            </div>
+        </div>
+        <div class="sort">
+            <table id="dataTable">
+            </table>
+        </div>
+        <!-- <button id="createNewItemButton">Create New Item</button> -->
+        <div class="create-div">
+            <h4>create new data:</h4>
+            <form id="itemForm" action="">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Name">
+                        </td>
+                        <td>
+                            <label for="description">Description</label>
+                            <input type="text" id="description" placeholder="Description">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="age">Age</label>
+                            <input type="number" id="age" placeholder="Age">
+                        </td>
+                        <td>
+                            <label for="city">City</label>
+                            <input type="text" id="city" placeholder="City">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="salary">Salary</label>
+                            <input type="text" id="salary" placeholder="Salary">
+                        </td>
+                    </tr>
+                </table>
+                <button type="submit" id="submit">Add</button>
+                <!-- <button type="submit">Update</button> -->
+            </form>
+        </div>
+        <div class="update">
+            <table id="updateTable">
+            </table>
+        </div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>
